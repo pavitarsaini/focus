@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536.8 277" preserveAspectRatio="none">
+    <defs>
+        <style>
+            @font-face {
+                font-family: 'elephantoutline';
+                src: url('../fonts/elephant-outline-webfont.woff2') format('woff2'),
+                    url('./fonts/elephant-outline-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+
+            }
+
+            .a {
+                fill: none;
+                stroke: #fff;
+                stroke-miterlimit: 10;
+            }
+
+            .b {
+                font-size: 125.46px;
+                fill: #fff;
+                font-family: ElephantOutline, Elephant;
+            }
+        </style>
+    </defs>
+    <polygon points="465.9 277 0 277 67.3 0 531.2 0 465.9 277" />
+    <line class="a" x1="91.7" y1="10.7" x2="503" y2="10.7" />
+    <line class="a" x1="26.7" y1="266.7" x2="438" y2="266.7" />
+    <line class="a" x1="493.6" y1="108.1" x2="516.4" y2="16.9" />
+    <line class="a" x1="51.6" y1="110.1" x2="74.4" y2="18.9" />
+    <line class="a" x1="13.6" y1="259.1" x2="36.4" y2="167.9" />
+    <line class="a" x1="456.6" y1="260.1" x2="479.4" y2="168.9" /><text class="b" transform="translate(137.3 177.2) scale(1.01 1)">about</text>
+</svg>

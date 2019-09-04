@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 731.6 662.7" preserveAspectRatio="none">
+    <defs>
+        <style>
+            @font-face {
+                font-family: 'elephantoutline';
+                src: url('../fonts/elephant-outline-webfont.woff2') format('woff2'),
+                    url('./fonts/elephant-outline-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+
+            }
+            
+            .a {
+                fill-rule: evenodd;
+            }
+
+            .b {
+                fill: none;
+                stroke: #fff;
+                stroke-miterlimit: 10;
+            }
+
+            .c {
+                font-size: 125.46px;
+                fill: #fff;
+                font-family: ElephantOutline, Elephant;
+            }
+        </style>
+    </defs>
+    <polygon class="a" points="397 661.2 0 662.7 0 118.2 530.5 118.2 397 661.2" />
+    <line class="b" x1="503.9" y1="191.8" x2="402.1" y2="606.2" />
+    <line class="b" x1="81.5" y1="126.7" x2="472.2" y2="126.7" /><text class="c" transform="translate(134.8 468.4) scale(1.01 1)">tron</text>
+</svg>

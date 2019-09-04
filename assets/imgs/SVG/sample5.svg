@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 951 547" preserveAspectRatio="none">
+    <defs>
+        <style>
+            @font-face {
+                font-family: 'elephantoutline';
+                src: url('../fonts/elephant-outline-webfont.woff2') format('woff2'),
+                    url('./fonts/elephant-outline-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+
+            }
+            
+            .a {
+                fill-rule: evenodd;
+            }
+
+            .b {
+                fill: none;
+                stroke: #fff;
+                stroke-miterlimit: 10;
+            }
+
+            .c {
+                font-size: 125.46px;
+                fill: #fff;
+                font-family: ElephantOutline, Elephant;
+            }
+        </style>
+    </defs>
+    <title>sample5</title>
+    <polygon class="a" points="815 547 0 544 134 2 316 2 282 142 748 142 781 0 951 1 815 547" />
+    <line class="b" x1="810.7" y1="6.3" x2="904" y2="6.3" />
+    <line class="b" x1="186" y1="6.5" x2="284.5" y2="6.5" />
+    <line class="b" x1="126.4" y1="74.7" x2="24.6" y2="489" />
+    <line class="b" x1="308.7" y1="154.7" x2="720" y2="154.7" />
+    <line class="b" x1="276.6" y1="122.1" x2="299.4" y2="30.9" />
+    <line class="b" x1="763.6" y1="128.1" x2="786.4" y2="36.9" />
+    <line class="b" x1="925.6" y1="71.6" x2="823.8" y2="486.4" /><text class="c" transform="translate(327.3 351.2) scale(1.01 1)">sample</text>
+</svg>
