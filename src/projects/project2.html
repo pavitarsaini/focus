@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pavfolio</title>
+
+    <!--// STYLESHEET //------------------------------------------------>
+
+    <!-- COMMON STYLESHEET -->
+    <link rel="stylesheet" href="../../src/styles/common.css">
+
+    <!-- PROJECTS STYLESHEET -->
+    <link rel="stylesheet" href="../../src/styles/projects.css">
+
+    <!-- PRELOADER STYLESHEET -->
+    <link rel="stylesheet" href="../../src/styles/preloader.css">
+
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+
+    <script src="https://kit.fontawesome.com/67e156c379.js"></script>
+
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+
+    <!--// SCRIPTS //--------------------------------------------------->
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- MAIN SCRIPT -->
+    <script type="text/javascript" src="../../src/scripts/projects.js"></script>
+
+    <!-- PARTICLE AFFECT -->
+    <script src="../../src/scripts/particle.projects.js"></script>
+
+
+    <style media="screen">
+        .bg-init,
+        .animsition-overlay-slide {
+            background-color: #fff;
+        }
+
+        .project-header {
+
+            top: 40%;
+            transform: translateY(-40%);
+            /*margin: 5%;**/
+            position: absolute;
+            left: 1%;
+            width: 50%;
+            min-height: auto;
+            max-width: 1000px;
+            margin: 50px 20px;
+        }
+
+        .title {
+            margin-bottom: 4%;
+            font-family: 'elephantoutline';
+            color: #fff;
+            font-size: 7vw;
+            font-weight: 100;
+        }
+
+        .learn-more {
+            position: absolute;
+            top: 72%;
+            margin-left: 61%;
+        }
+
+        .anim {
+            position: absolute;
+            top: 25%;
+            left: 56%;
+            width: 42%;
+            height: 45%;
+        }
+    </style>
+
+    <audio id="bg" autoplay>
+        <source src="../audio/part3.mp3" type="audio/mpeg">
+    </audio>
+
+</head>
+
+<body class="bg-init">
+
+    <div class="animsition-overlay">
+
+        <!-- PARTICLE OVERLAY -->
+        <div class="page-background">
+            <div id="page-particles-js"></div>
+        </div>
+
+
+        <a href="../../index.html" class="animsition-link" data-animsition-out-class="fade-in">
+            <div class="close-container">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+                <label class="close">close</label>
+            </div>
+        </a>
+
+        <a id="play-pause-button" style="filter: invert(1); position: absolute; font-size: 50px;
+  cursor: pointer; left: 89%;  bottom: 90%;" class="fas fa-volume-mute"></a>
+
+        <div class="project-header">
+            <div class="header-header">
+                <div>
+                    <h3 class="title">THE PATH</h3>
+                </div>
+                <div class="info-project">
+                    <div class="labels">
+                        <p>animation | low poly</p>
+                        <p>a journey of two friends</p>
+                    </div>
+                    <div>
+                        <p class="date">2019</p>
+                    </div>
+                    <div>
+                        <img class="header-icon" src="../../src/icons/AI-logo.png" alt="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+
+            <p class="description">There is always more then <span class="highlight bold">one path</span> and choosing one and sticking with it is easy <span class="highlight bold">is easy if you make the best out of it.</span>
+                <br><br>
+                I created this animation to show that there is never <span class="highlight bold">a wrong path.</span>
+                One may be harder than the other but <span class="highlight bold">both lead to success in the end.</span> This <span class="highlight bold">Low poly</span> animation took lots of work but I was very satisfied with the look and feel of it. I've always enjoyed low poly design because <span class="highlight bold"> its simple and makes objects pop out.</span>
+                <br><br>
+                <span class="extra">Want to see some look low poly stuff? <a href="https://medium.muz.li/low-poly-inspiration-2-52184075f12c" class="underline">Check this out.</a>
+                </span></p>
+        </div>
+
+        <a href="./assets/thepath.html">
+            <button class="learn-more">
+                <div class="circle">
+                    <span class="icon arrow"></span>
+                </div>
+                <p class="button-text">FULL SCREEN</p>
+            </button>
+        </a>
+
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="42%" height="45%" class="anim">
+            <param name="movie" value="./assets/thepath-Pav.swf" />
+            <param name="quality" value="high" />
+            <PARAM NAME="SCALE" VALUE="exactfit">
+            <embed src="./assets/thepath-Pav.swf" quality="high" type="application/x-shockwave-flash" width="100%" height="100%" SCALE="exactfit" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object>
+
+    </div>
+    <!-- animsition.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" charset="utf-8"></script>
+    <!-- particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.animsition-overlay').animsition({
+                    inClass: 'overlay-slide-in-top',
+                    outClass: 'overlay-slide-out-right',
+                    overlay: true,
+                    overlayClass: 'animsition-overlay-slide',
+                    overlayParentElement: 'body'
+                })
+                .one('animsition.inStart', function() {
+
+                    $('body').removeClass('bg-init');
+                });
+        });
+    </script>
+</body>
+
+</html>

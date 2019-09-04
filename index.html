@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pavfolio</title>
+
+    <!--// STYLESHEET //------------------------------------------------>
+
+    <!-- COMMON STYLESHEET -->
+    <link rel="stylesheet" href="./src/styles/common.css">
+
+    <!-- INDEX STYLESHEET -->
+    <link rel="stylesheet" href="./src/styles/index.css">
+
+    <!-- PRELOADER STYLESHEET -->
+    <link rel="stylesheet" href="./src/styles/preloader.css">
+
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+
+    <script src="https://kit.fontawesome.com/67e156c379.js"></script>
+
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+
+
+    <!--// SCRIPTS //--------------------------------------------------->
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- MAIN SCRIPT -->
+    <script type="text/javascript" src="./src/scripts/index.js"></script>
+
+    <!-- PARTICLE AFFECT -->
+    <script src="./src/scripts/particle.js"></script>
+
+    <audio id="audio-hover">
+        <source src="./src/audio/hover.mp3">
+    </audio>
+
+    <style media="screen">
+        .animsition-overlay-slide {
+            background-color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <audio id="bg" autoplay>
+        <source src="./src/audio/part1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- FADE ON LOAD -->
+    <div class="fade-in"></div>
+
+    <!-- PRELOADER -->
+    <div class="preloader" style="display: block;">
+        <div id="particles-js"></div>
+        <div class="text-center">
+            <span class="loader-text"></span>
+        </div>
+    </div>
+
+    <!-- PARTICLE OVERLAY -->
+    <div class="animsition-overlay">
+        <div class="page-background">
+            <div id="page-particles-js" style="height: 100%;"></div>
+        </div>
+
+        <a onmouseover="playclip();" href="./src/projects/project1.html" class="animsition-link" data-animsition-out-class="overlay-slide-out-left">
+
+            <img id="project1-project" class="project-container svg-content" src="./src/imgs/project1.png" width="34%" height="50%" style="left: 0; top: 0;">
+
+            <text id="project1-name" class="elephantoutline" style="top: 20%; left: 11.5%;">IDC</text>
+            <text id="project1-text" class="cairo-white" style="top: 28%; left: 11.5%;">Ps | 2019</text>
+            <text id="project1-info" class="cairo" style="top: 28%; left: 7.3%;">an inspirational poster</text>
+
+        </a>
+
+        <!-- THE PATH -->
+        <a onmouseover="playclip();" href="./src/projects/project2.html" class="animsition-link" data-animsition-out-class="overlay-slide-out-top">
+
+            <img id="project2-project" class="project-container svg-content" src="./src/imgs/project2.png" width="50.75%" height="50%" style="top:0.2%; left: 27%;">
+
+            <text id="project2-name" class="elephantoutline" style="top: 20%; left: 41%;">THE PATH</text>
+            <text id="project2-text" class="cairo-white" style="top: 28%; left: 47.9%;">An | 2019</text>
+            <text id="project2-info" class="cairo" style="top: 28%; left: 43%;">a journey of two friends</text>
+
+        </a>
+
+        <!-- THE BOX -->
+        <a onmouseover="playclip();" href="./src/projects/project3.html" class="animsition-link" data-animsition-out-class="overlay-slide-out-right">
+
+            <img id="project3-project" class="project-container svg-content" src="./src/imgs/project3.png" width="30.26%" height="50.2%" style="left:70.1%;">
+
+            <text id="project3-name" class="elephantoutline" style="top: 20%; left: 79%;">THE BOX</text>
+            <text id="project3-text" class="cairo-white" style="top: 28%; left: 83.8%;">Ps Pr | 2019</text>
+            <text id="project3-info" class="cairo" style="top: 28%; left: 80.7%;">a life changing product</text>
+        </a>
+
+        <!-- TRON -->
+        <a onmouseover="playclip();" href="./src/projects/project4.html" class="animsition-link" data-animsition-out-class="overlay-slide-out-left">
+
+            <img id="project4-project" class="project-container svg-content" src="./src/imgs/project4.png" width="27.1%" height="50%" style="top: 50%; left: 0%;">
+
+            <text id="project4-name" class="elephantoutline" style="top: 71%; left: 6.5%;">TRON</text>
+            <text id="project4-text" class="cairo-white" style="top: 79%; left: 7.9%;">html | 2019</text>
+            <text id="project4-info" class="cairo" style="top: 80%; left: 6.0%;">a windows helper</text>
+        </a>
+
+        <!-- TBD(SAMPLE 5) -->
+        <a onmouseover="playclip();" href="./src/projects/project5.html" class="animsition-link" data-animsition-out-class="overlay-slide-out-left">
+
+            <img id="project5-project" href="./src/projects/project5.html" class="project-container svg-content" src="./src/imgs/project5.png" width="50.5%" height="50%" style="top: 49.95%; left: 19.9%;">
+
+            <text id="project5-name" class="elephantoutline" style="top: 71%; left: 36%;">HURRICANE</text>
+            <text id="project5-text" class="cairo-white" style="top: 79%; left: 41%;">Processing | 2018</text>
+            <text id="project5-info" class="cairo" style="top: 80%; left: 38%;">app to plot hurricane data</text>
+        </a>
+
+        <!-- TBD(SAMPLE 6) -->
+        <a onmouseover="playclip();" href="./src/projects/project6.html" class="animsition-link" data-animsition-out-class="overlay-slide-out-left">
+
+            <img id="project6-project" href="./src/projects/project6.html" class="project-container svg-content" src="./src/imgs/project6.png" width="37.7%" height="50%" style="top: 49.95%; left:63.1%">
+
+            <text id="project6-name" class="elephantoutline" style="top: 71%; left: 76.6%;">.LEARN</text>
+            <text id="project6-text" class="cairo-white" style="top: 79%; left: 80.7%;">ALL | 2017</text>
+            <text id="project6-info" class="cairo" style="top: 80%; left: 78%;">a project to learn</text>
+        </a>
+
+        <!-- ABOUT -->
+        <a onclick="playSwoosh();" onmouseover="playclip();" href="./src/projects/about.html" class="animsition-link" data-animsition-out-class="overlay-slide-out-left">
+
+            <img id="about-project" href="./src/projects/about.html" class="project-container svg-content" src="./src/imgs/about.png" width="29%" height="26.5%" style="top: 37.3%; left: 34.6%;">
+            <text id="about-name" class="elephantoutline" style="top: 46.5%; left: 42%;">ABOUT</text>
+        </a>
+
+        <a id="play-pause-button" style="filter: invert(1); position: absolute; font-size: 50px;
+  cursor: pointer; left: 1%;  bottom: 92%;" class="fas fa-volume-mute"></a>
+
+
+    </div>
+
+    <!-- animsition.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" charset="utf-8"></script>
+    <!-- particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.animsition-overlay').animsition({
+                    inClass: 'overlay-slide-in-top',
+                    outClass: 'overlay-slide-out-top',
+                    inDuration: 0,
+                    overlay: true,
+                    overlayClass: 'animsition-overlay-slide',
+                    overlayParentElement: 'body',
+
+                })
+                .one('animsition.inStart', function() {
+
+                    $('body').removeClass('bg-init');
+
+                });
+        });
+    </script>
+
+
+</body>
+
+</html>
