@@ -1,0 +1,91 @@
+@import url("./fonts/fonts.css");
+
+
+
+.elephantoutline {
+    font-family: 'elephantoutline';
+    color: #fff;
+    font-size: 6vw;
+}
+
+.cairo {
+    font-family: 'cairo_lightregular';
+    font-size: 1.5vw;
+    color: #000;
+    text-align: center;
+}
+
+.cairo-white {
+    font-family: 'cairo_lightregular';
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+.loader-text {
+    font-family: 'cairo_lightregular';
+    color: #000;
+    font-size: 2vw;
+    top: 48%;
+    left: 38%;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    letter-spacing: 0.06em;
+    line-height: 32px;
+    width: 100%;
+    height: 100%;
+	justify-content: center;
+  align-items: center;
+}
+
+.animsition-overlay {
+    width: 100%;
+    height: 100%;
+}
+
+
+.page-background {
+    position: relative;
+    background-color: transparent;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.page-particles-js {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    pointer-events: none;
+
+}
+
+.text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
