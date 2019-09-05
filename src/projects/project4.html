@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pavfolio</title>
+
+    <!--// STYLESHEET //------------------------------------------------>
+
+    <!-- COMMON STYLESHEET -->
+    <link rel="stylesheet" href="../../src/styles/common.css">
+
+    <!-- PROJECTS STYLESHEET -->
+    <link rel="stylesheet" href="../../src/styles/projects.css">
+
+    <!-- PRELOADER STYLESHEET -->
+    <link rel="stylesheet" href="../../src/styles/preloader.css">
+
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+
+    <script src="https://kit.fontawesome.com/67e156c379.js"></script>
+
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    
+    <!--// SCRIPTS //--------------------------------------------------->
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- MAIN SCRIPT -->
+    <script type="text/javascript" src="../../src/scripts/projects.js"></script>
+
+    <!-- PARTICLE AFFECT -->
+    <script src="../../src/scripts/particle.projects.js"></script>
+
+
+    <style media="screen">
+        .bg-init,
+        .animsition-overlay-slide {
+            background-color: #fff;
+        }
+
+        .project-header {
+
+            top: 40%;
+            transform: translateY(-40%);
+            /*margin: 5%;**/
+            position: absolute;
+            left: 1%;
+            width: 50%;
+            min-height: auto;
+            max-width: 1000px;
+            margin: 50px 20px;
+        }
+
+        .title {
+            margin-bottom: 10%;
+            font-family: 'elephantoutline';
+            color: #fff;
+            font-size: 7vw;
+            font-weight: 100;
+        }
+
+        .poster {
+            position: absolute;
+            top: 13%;
+            left: 58%;
+            width: 39%;
+            height: 84%;
+        }
+    </style>
+    
+    <audio id="bg" autoplay>
+        <source src="../audio/part5.mp3" type="audio/mpeg">
+    </audio>
+    
+</head>
+
+<body class="bg-init">
+
+    <div class="animsition-overlay">
+
+        <!-- PARTICLE OVERLAY -->
+        <div class="page-background">
+            <div id="page-particles-js"></div>
+        </div>
+
+
+        <a href="../../index.html" class="animsition-link" data-animsition-out-class="fade-in">
+            <div class="close-container">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+                <label class="close">close</label>
+            </div>
+        </a>
+
+        <a id="play-pause-button" style="filter: invert(1); position: absolute; font-size: 50px;
+  cursor: pointer; left: 89%;  bottom: 90%;" class="fas fa-volume-mute"></a>
+
+        <div class="project-header">
+            <div class="header-header">
+                <div>
+                    <h3 class="title">TRON</h3>
+                </div>
+                <div class="info-project">
+                    <div class="labels">
+                        <p>html | desktop</p>
+                        <p>a windows helper</p>
+                    </div>
+                    <div>
+                        <p class="date">2018-2019</p>
+                    </div>
+                    <div>
+                        <img class="header-icon" src="../../src/icons/electron.png" alt="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+
+            <p class="description">Tron is one of my many unreleased apps for windows. It is a <span class="highlight bold">very simple yet powerful utility</span> to help users clean and fix Windows problems. When realeased it will be free and open source <span class="highlight bold">to let anyone tinker with it.</span>
+                <br><br>
+                I got the idea when my family members asked wanted me to fix their computer. Since there is <span class="highlight bold">no free and clean windows cleaner</span> out there.
+                So I decided to build one on my own. Tron uses many other <span class="highlight bold"> open source scripts to solve most windows problems</span> and some custom to code to put it all together in a clean package.
+                <br><br>
+                <span class="extra">Tron is still under development and set to launch before next year.</span></p>
+        </div>
+
+
+        <img class="poster" src="../../src/projects/assets/tron.png">
+        <div class="imagine"></div>
+
+
+    </div>
+    <!-- animsition.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" charset="utf-8"></script>
+    <!-- particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.animsition-overlay').animsition({
+                    inClass: 'overlay-slide-in-left',
+                    outClass: 'overlay-slide-out-right',
+                    overlay: true,
+                    overlayClass: 'animsition-overlay-slide',
+                    overlayParentElement: 'body'
+                })
+                .one('animsition.inStart', function() {
+
+                    $('body').removeClass('bg-init');
+                });
+        });
+    </script>
+</body>
+
+</html>
